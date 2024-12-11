@@ -9,39 +9,16 @@ body {
 
 h1,
 h2,
-h3,
-p,
-ul {
+h3 {
+    font-family: 'Raleway', sans-serif;
     margin: 0;
-    padding: 0;
-    list-style: none;
     color: #333;
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: left;
-}
-
-p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -50,37 +27,48 @@ a {
     transition: color 0.3s;
 }
 
-/* Container */
-.container {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
+/* Normalize ve Temel Stiller */
+@import url('modern-normalize.min.css');
 
 /* Header */
 header {
     background-color: #1f2937;
     color: #e5e7eb;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
-    border-bottom: 1px solid #4f46e5;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    max-width: 1158px;
+    margin: 0 auto;
 }
 
 .site-logo {
     font-size: 1.75rem;
     font-weight: bold;
     color: #4f46e5;
+    margin-right: 76px;
 }
 
 .site-logo .studio-text {
     color: #e5e7eb;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 nav ul {
     display: flex;
-    gap: 1.5rem;
+    gap: 40px;
+}
+
+nav ul li {
+    padding: 24px 0;
 }
 
 nav a {
@@ -94,13 +82,20 @@ nav a:hover {
 
 .contact-info ul {
     display: flex;
-    gap: 1.5rem;
+    gap: 40px;
+}
+
+/* Genel Container Stili */
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Main Section */
 .main-section {
     text-align: center;
-    padding: 120px 1rem;
+    padding: 4rem 2rem;
     background-color: #4f46e5;
     color: #fefefe;
 }
@@ -125,125 +120,102 @@ nav a:hover {
     background-color: #1e40af;
 }
 
-/* Services Section */
-.services-section {
-    padding: 120px 1rem;
-    background-color: #f9fafb;
+/* 2. Bölüm Section */
+.section-two {
+    padding: 188px 0;
+}
+
+.section-two .container {
     text-align: center;
 }
 
-.section-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #1f2937;
+.section-two h1 {
+    max-width: 496px;
+    margin: 0 auto 1rem;
 }
 
-.service-item {
-    margin-bottom: 2rem;
-    border-bottom: 1px solid #e5e7eb;
-    padding-bottom: 1rem;
+.section-two button {
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    background-color: #4d5ae5;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.service-title {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #333;
+/* 3. Bölüm Section */
+.section-three {
+    padding: 120px 0;
 }
 
-.service-description {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Team Section */
-.team-section {
-    padding: 120px 1rem;
-    background-color: #e5e7eb;
+.section-three .container {
     text-align: center;
 }
 
-.team-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #1f2937;
+.section-three h2 {
+    visibility: hidden;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
 }
 
-.team-member {
-    display: inline-block;
-    margin: 1rem;
-    text-align: center;
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 8px;
+.section-three ul {
+    display: flex;
+    gap: 24px;
 }
 
-.team-member img {
-    border-radius: 50%;
-    margin-bottom: 1rem;
+.section-three ul li {
+    width: calc((100% - 72px) / 4);
 }
 
-.team-member-title {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: #333;
+.section-three ul li h3 {
+    margin-bottom: 8px;
 }
 
-.team-member-role {
-    font-size: 1rem;
-    color: #555;
+/* 4. Bölüm Section */
+.section-four {
+    padding: 120px 0;
 }
 
-/* Portfolio Section */
-.section-class {
-    padding: 120px 1rem;
-    background-color: #f3f4f6;
+.section-four .container {
     text-align: center;
 }
 
-.title-class {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #1f2937;
+.section-four h2 {
+    margin-bottom: 72px;
 }
 
-.section-class ul {
+.section-four ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
-.subtitle-class {
-    font-size: 1.25rem;
-    margin-top: 1rem;
-    color: #333;
+.section-four ul li {
+    width: calc((100% - 72px) / 4);
 }
 
-.text-class {
-    font-size: 1rem;
-    color: #555;
+.section-four ul li div {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
 }
+<footer class="footer-section">
+    <a href="#" class="logo-class">
+<span class="studio-span">Studio</span>
 
-/* Footer */
-.footer-section {
-    background-color: #1f2937;
-    color: #e5e7eb;
-    text-align: center;
-    padding: 2rem 1rem;
-}
 
-.logo-class {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #4f46e5;
-}
+    </a>
+    <p class="footer-paragraph">
+        Increase the flow of customers and sales for your business with digital marketing & growth solutions
+    </p>
 
-.studio-span {
-    color: #e5e7eb;
-}
 
-.footer-paragraph {
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: #d1d5db;
-}
+</footer>
