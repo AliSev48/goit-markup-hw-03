@@ -41,51 +41,83 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
-    max-width: 1158px;
     margin: 0 auto;
+    max-width: 1158px;
+    padding: 0 15px;
 }
 
 .site-logo {
-    font-size: 1.75rem;
-    font-weight: bold;
-    color: #4f46e5;
+    font-family: "raleway" , sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
     margin-right: 76px;
 }
 
 .site-logo .studio-text {
-    color: #e5e7eb;
+    color: #2e2f42;
+    
 }
 
-nav {
+.nav-bar {
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
-
-nav ul {
+.nav-links {
     display: flex;
     gap: 40px;
 }
 
-nav ul li {
-    padding: 24px 0;
-}
-
-nav a {
-    color: #e5e7eb;
+.nav-link-studio,
+.nav-link-portfolio,
+.nav-link-contacts {
     font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        text-decoration: none;
 }
 
-nav a:hover {
-    color: #4f46e5;
+.nav-link-home:hover,
+.nav-link-portfolio:hover,
+.nav-link-contact:hover,
+.nav-link-home:focus,
+.nav-link-portfolio:focus,
+.nav-link-contact:focus {
+    color: #404bbf;
 }
 
-.contact-info ul {
+/* Contact Info Styling */
+.contact-info {
+    font-style: normal;
+}
+
+.contact-list {
     display: flex;
     gap: 40px;
 }
 
-/* Genel Container Stili */
+.contact-email,
+.contact-phone {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-decoration: none;
+}
+
+.contact-email:hover,
+.contact-phone:hover,
+.contact-email:focus,
+.contact-phone:focus {
+    color: #404bbf;
+}
+
+/* General Container */
 .container {
     width: 1158px;
     margin: 0 auto;
