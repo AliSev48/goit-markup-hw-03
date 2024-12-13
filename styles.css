@@ -133,49 +133,24 @@ header {border-bottom: 1px solid #e7e9fc;
     padding: 0 15px;
 }
 
-/* Main Section */
+/* 1. Main Section */
+
 .main-section {
-    text-align: center;
-    padding: 4rem 2rem;
-    background-color: #4f46e5;
-    color: #fefefe;
-}
-
-.main-title {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    font-weight: bold;
-}
-
-.order-button {
-    background-color: #2563eb;
-    color: #ffffff;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.order-button:hover {
-    background-color: #1e40af;
-}
-
-/* 2. Bölüm Section */
-.section-two {
     padding: 188px 0;
+    background-color: #2e2f42;
 }
 
-.section-two .container {
-    text-align: center;
-}
-
-.section-two h1 {
+.main-section .main-title {
     max-width: 496px;
-    margin: 0 auto 1rem;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin: 0 auto 24px auto;
 }
 
-.section-two button {
+.main-section .order-button {
     display: block;
     margin: 0 auto;
     min-width: 169px;
@@ -184,8 +159,57 @@ header {border-bottom: 1px solid #e7e9fc;
     background-color: #4d5ae5;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
 }
 
+.main-section .order-button:hover,
+.main-section .order-button:focus {
+    background-color: #404bbf;
+}
+
+/* 2. Bölüm Section */
+.services-section {
+    padding: 120px 0;
+}
+.section-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.services-list {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.service-item {
+    width: calc((100% - 3 * 24px) / 4);
+}
+.service-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+.service-description {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
 /* 3. Bölüm Section */
 .section-three {
     padding: 120px 0;
